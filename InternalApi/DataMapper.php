@@ -2,26 +2,6 @@
 
 namespace CollabimApp\InternalApi;
 
-use CollabimApp\Account\Affil\Entity\DatePickerForm;
-use CollabimApp\Account\Affil\Entity\PaidAmountsList;
-use CollabimApp\Account\Affil\Entity\RegisteredClientsList;
-use CollabimApp\Account\Affil\Form\DatePickerFormType;
-use CollabimApp\Client\Client;
-use CollabimApp\Client\Discount\DiscountedPlanFacade;
-use CollabimApp\Client\Discount\DiscountFacade;
-use CollabimApp\Client\InvoicingPeriod\InvoicingPeriodDiscountBind;
-use CollabimApp\Payment\Invoice\InvoiceListFacade;
-use CollabimApp\User\CurrentPageFacade;
-use KutnyLib\DateTime\Date\Date;
-use KutnyLib\Security\Authorization;
-use KutnyLib\Templating\LayoutFiller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
-use Symfony\Bundle\FrameworkBundle\Routing\Router;
-use Symfony\Component\Form\FormFactory;
-use Symfony\Component\HttpFoundation\RedirectResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
-
 class DataMapper
 {
     private $db;
